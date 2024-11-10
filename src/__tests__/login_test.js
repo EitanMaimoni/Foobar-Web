@@ -1,9 +1,9 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Login from '../Login/Login';
-import User from '../SignUp/User';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
-import { AuthContext } from '../AuthContext/AuthContext';
+import Login from '../login/login';
+import User from '../signUp/user';
+import { ThemeContext } from '../themeContext/themeContext';
+import { AuthContext } from '../authContext/authContext';
 import '@testing-library/jest-dom';
 
 // Tests to verify Login component functionality

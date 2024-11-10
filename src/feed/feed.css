@@ -1,0 +1,30 @@
+:root {
+    /* Light Theme */
+    --bg-color-light: #f0f2f5;
+    --text-color-light: #1c1e21;
+    --button-bg-light: #bfc4c7;
+    --button-text-light: #ffffff;
+    --input-border-light: #dddfe2;
+    --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    /* Dark Theme */
+    --bg-color-dark: #18191a;
+    --bg-color-soft-dark: #252b32;
+    --text-color-dark: #e4e6eb;
+    --button-bg-dark: #3a3b3c;
+    --button-text-dark: #ffffff;
+    --input-border-dark: #3e4042;
+    --box-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.row {
+    margin-top: 60px;
+    overflow: auto;
+    background-color: var(--bg-color-light);
+}
+
+body[data-theme="dark"] .row {
+    background-color: var(--bg-color-dark);
+}
+.Feed{
+    overflow: hidden;
+}

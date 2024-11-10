@@ -1,0 +1,118 @@
+  body[data-theme="light"] {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+body[data-theme="dark"] {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.signin-container {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-light);
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+body[data-theme="dark"] .signin-container {
+  background-color: var(--bg-color-soft-dark);
+  color: var(--text-color-dark);
+  box-shadow: var(--box-shadow-dark);
+}
+
+
+body[data-theme="dark"] button {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--input-border-light);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+body[data-theme="dark"] input[type="text"],
+body[data-theme="dark"] input[type="password"],
+body[data-theme="dark"] input[type="file"] {
+  border: 1px solid var(--input-border-dark);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+#label {
+  margin-bottom: 5px;
+  display: block;
+  color: var(--text-color-light);
+}
+
+body[data-theme="dark"] #label {
+  color: var(--text-color-dark);
+}
+
+.Toggle {
+  background-color: var(--button-bg-light);
+  color: black;
+  width: fit-content;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body[data-theme="dark"] .Toggle {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+  border: 1px solid var(--input-border-light);
+}
+
+.Toggle:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+body[data-theme="dark"] .Toggle:hover {
+  background-color: var(--bg-color-dark);
+  color: var(--button-text-dark);
+}
+
+#submit {
+  background-color: var(--button-bg-light);
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+body[data-theme="dark"] #submit {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+}
+
+#submit:hover {
+  background-color: lightgray;
+  color:black;
+}
+
+body[data-theme="dark"] #submit:hover {
+  background-color: var(--bg-color-dark);
+  color: var(--button-text-dark);
+}

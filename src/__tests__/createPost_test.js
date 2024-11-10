@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import CreatePost from '../Post/CreatePost';
+import CreatePost from '../post/createPost';
 import '@testing-library/jest-dom';
 
 // Tests to verify CreatePost component functionality

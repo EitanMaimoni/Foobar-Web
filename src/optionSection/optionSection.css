@@ -1,0 +1,81 @@
+.friends-list {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); 
+  z-index: 100;
+}
+/* Your existing styling for circular-container */
+.circular-container {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--button-bg-light);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s, height 0.3s;
+  transition: transform 0.3s ease;
+}
+body[data-theme="dark"] .circular-container {
+  background-color: var(--button-bg-dark);
+  color: var(--text-color-dark);
+}
+
+.circular-container:hover{
+  transform: scale(1.2); 
+
+}
+.option-section-button {
+  height: 58px;
+  width: 66px;
+  border: none;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.s ease, width 0.9s, height 0.9s;
+}
+
+/* Dark mode styles for option section button */
+body[data-theme="dark"] .option-section-button {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark); 
+  border: none;
+}
+
+/* Add hover effect for the button */
+.option-section-button:hover {
+  background-color: white;
+}
+
+#logOutBtn {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 49, 49);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  border: none;
+}
+
+#logOutBtn:hover {
+  transform: scale(1.2); 
+}

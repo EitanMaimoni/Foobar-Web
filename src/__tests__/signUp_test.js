@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
-import SignUp from '../SignUp/SignUp';
+import { ThemeContext } from '../themeContext/themeContext';
+import SignUp from '../signUp/signUp';
 import '@testing-library/jest-dom';
 
 // Tests to verify SignUp component functionality

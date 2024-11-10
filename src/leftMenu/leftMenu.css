@@ -1,0 +1,25 @@
+.left-menu-container {
+    position: fixed;
+    top: 60px;
+    left: 0; 
+    width: 300px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
+    z-index: 100; 
+  }
+  
+  /* Dark Mode styles for Left Menu Container */
+  body[data-theme="dark"] .left-menu-container {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+
+/* Dark Mode styles for Left Menu Container */
+body[data-theme="dark"] .left-menu-container {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark); 
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Feed from '../Feed/Feed';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
-import { AuthContext } from '../AuthContext/AuthContext';
+import Feed from '../feed/feed';
+import { ThemeContext } from '../themeContext/themeContext';
+import { AuthContext } from '../authContext/authContext';
 import '@testing-library/jest-dom';
 
 // Tests to verify Feed component functionality
